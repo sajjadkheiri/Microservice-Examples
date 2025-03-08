@@ -12,11 +12,21 @@
 
 ## Communication in Microservice
 
-### Sync
+### Interaction Styles
 
-1. One to one : Request & Response 
+1. Sync
+   - One to one : Request & Response 
+   
+2. Async
+   - One to one : Async Request & Response / One way notification
+   - One to many : Pub-Sub / Pub-Async response
 
-### Async
+### API
 
-1. One to one : Async Request & Response / One way notification
-2. One to many : Pub-Sub / Pub-Async response
+### Messaging Format
+
+### Partial failure (Circuit Breaker)
+
+### Service Discovery
+
+#### Service Registry 
