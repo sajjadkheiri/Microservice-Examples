@@ -54,4 +54,38 @@
 2. Retriable
 3. Pivotal
 
+### Coordinating in Saga
 
+1. Choreography
+2. Orchestration
+
+### Anomaly
+
+#### Lost Update : 
+One Saga overwrites without reading changes made by another Saga
+
+#### Dirty Read : 
+   A transaction reads the updates made by a Saga that has not yet completed those updates
+
+#### NonRepeatable Read : 
+   Two different steps of Saga read the same data and get different results because another saga has made updates
+
+### Countermeasure for handling the lack of isolation 
+   
+
+#### Semantic Lock :
+   
+
+#### Commutative Update : 
+
+
+#### Pessimistic View : 
+
+
+#### Reread Value : 
+
+
+#### Version File : 
+
+
+#### By Value : 
