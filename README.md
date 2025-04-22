@@ -89,3 +89,13 @@ One Saga overwrites without reading changes made by another Saga
 
 
 #### By Value : 
+
+## Domain Modeling & Building Blocks
+
+### Patterns
+
+#### Entity
+
+#### Value Object
+
+#### Domain Service
