@@ -221,6 +221,9 @@ that calculate logic and finally return output.
 
 #### Lifecycle pattern
 
-- Aggregate
-- Factory
-- Repository 
+##### Aggregate
+- Aggregate root
+- Don't have relationship between objects just use object's id
+- You don't access to use objects under aggregate root directly like order/OrderLines
+##### Factory
+##### Repository 
