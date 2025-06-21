@@ -15,12 +15,12 @@
 ### Interaction Styles
 
 1. Sync
-   - One to one : Request & Response 
-   
+    - One to one : Request & Response
+
 2. Async
-   - One to one : Async Request & Response / One way notification
-   - One to many : Pub-Sub / Pub-Async response
-  
+    - One to one : Async Request & Response / One way notification
+    - One to many : Pub-Sub / Pub-Async response
+
 ### API
 
 ### Messaging Format
@@ -29,7 +29,7 @@
 
 ### Service Discovery
 
-#### Service Registry 
+#### Service Registry
 
 ### Messaging
 
@@ -46,7 +46,7 @@
 
 ### Trouble With Distributed Transaction
 
-### Saga Pattern 
+### Saga Pattern
 
 ### Types of Transactions
 
@@ -61,34 +61,31 @@
 
 ### Anomaly
 
-#### Lost Update : 
+#### Lost Update :
+
 One Saga overwrites without reading changes made by another Saga
 
-#### Dirty Read : 
-   A transaction reads the updates made by a Saga that has not yet completed those updates
+#### Dirty Read :
 
-#### NonRepeatable Read : 
-   Two different steps of Saga read the same data and get different results because another saga has made updates
+A transaction reads the updates made by a Saga that has not yet completed those updates
 
-### Countermeasure for handling the lack of isolation 
-   
+#### NonRepeatable Read :
+
+Two different steps of Saga read the same data and get different results because another saga has made updates
+
+### Countermeasure for handling the lack of isolation
 
 #### Semantic Lock :
-   
 
-#### Commutative Update : 
+#### Commutative Update :
 
+#### Pessimistic View :
 
-#### Pessimistic View : 
+#### Reread Value :
 
+#### Version File :
 
-#### Reread Value : 
-
-
-#### Version File : 
-
-
-#### By Value : 
+#### By Value :
 
 ## Domain Modeling & Building Blocks
 
@@ -96,6 +93,134 @@ One Saga overwrites without reading changes made by another Saga
 
 #### Entity
 
+> [!Tip]
+> Every entity has an identity property (Id) that It doesn't modify the value.
+<br />
+> If two object have the same Id, we have a same object.
+
+```c#
+    public class Person
+    {
+        public int Id { get; private set;}
+        public string FirstName { get; private set;}
+        public string LastName { get; private set;}
+        
+        public Person(int id,string firstName,string lastName)
+        {
+            if(string.IsNullOrEmpty(firstName))
+                throw new ArgumentNullException(nameOf(firstName))
+            
+            if(string.IsNullOrEmpty(lastName))
+                throw new ArgumentNullException(nameOf(lastName))
+            
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+        }
+        
+        public void SetFirstName(string firstName)
+        {
+            if(string.IsNullOrEmpty(firstName))
+                throw new ArgumentNullException(nameOf(firstName))
+            
+            FirstName = firstName;
+        }
+        
+        public void SetLastName(string lastName)
+        {
+            if(string.IsNullOrEmpty(lastName))
+                throw new ArgumentNullException(nameOf(lastName))
+            
+            LastName = lastName;
+        }
+        
+        public override bool Equals(object? obj)
+        {
+            var other = obj as Person;
+            if (other == null)
+                return false;
+            
+            return this.Id == other.Id;
+        }
+    }
+```
+
 #### Value Object
 
+```c#
+   public class FirstName
+   {
+       public string Value { get; private set;}
+       
+       public FirstName(string value)
+       {
+         if(string.IsNullOrEmpty(firstName))
+            throw new ArgumentNullException(nameOf(firstName))
+            
+            Value = value
+       }
+       
+       public FirstName SetFirstName(string value)
+       {
+           return new FirstName(value);
+       }
+       
+       public override Equals(object? obj)
+       {
+           var other = obj as FirstName;
+           if(other == null)
+                return false;
+           
+           return Value == other.value;
+       }
+   }    
+```
+
+```c#
+    public class Person
+    {
+        public int Id { get; private set;}
+        public FirstName FirstName { get; private set;}
+        public LastName LastName { get; private set;}
+        
+        public Person(int id,FirstName firstName,LastName lastName)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+        }
+        
+        public void SetFirstName(FirstName firstName)
+        {           
+            FirstName = FirstName.SetFirstName(firstName);
+        }
+        
+        public void SetLastName(LastName lastName)
+        {           
+            LastName = LastName.SetLastName(lastName);
+        }
+
+        public override bool Equals(object? obj)
+        {
+            var other = obj as Person;
+            if (other == null)
+                return false;
+            
+            return this.Id == other.Id;
+        }
+    }
+```
+
 #### Domain Service
+
+Domain service is a business logic that is independent and stateless. It increases
+cohesion and low coupling. It means that a method must have the input parameters
+that calculate logic and finally return output.
+
+#### Module
+
+#### Lifecycle pattern
+
+- Aggregate
+- Factory
+- Repository 
