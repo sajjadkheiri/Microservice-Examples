@@ -8,12 +8,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5875cd4-ea38-499d-b478-17f04af4d600" name="Changes" comment="Aggregation in Microservice">
+      <change afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Factory/Customer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Factory/CustomerType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Microservice.DomainModelingBuildingBlocks.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Customers/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.Aggregate/Customers/Customer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Orders/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.Aggregate/Orders/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Orders/OrderLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.Aggregate/Orders/OrderLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Products/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.Aggregate/Products/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice-Examples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice-Examples.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Customers/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Customers/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Microservice.Aggregate.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Orders/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Orders/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Orders/OrderLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Orders/OrderLine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Products/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Products/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +34,12 @@
     &quot;assignee&quot;: &quot;sajjadkheiri&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sajjadkheiri/Microservice-Examples.git&quot;,
-    &quot;accountId&quot;: &quot;9977d565-e958-4aaf-9537-58ebaea68baf&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sajjadkheiri/Microservice-Examples.git",
+    "accountId": "8a27aa03-0f15-446c-968b-6ce54b46265c"
   }
-}</component>
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -47,19 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Microservice.Aggregate" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -67,9 +72,14 @@
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Microservice.Aggregate/Microservice.Aggregate.csproj" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Microservice.DomainModelingBuildingBlocks.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -90,6 +100,7 @@
       <updated>1750501459438</updated>
       <workItem from="1750501460656" duration="59000" />
       <workItem from="1750501539176" duration="4741000" />
+      <workItem from="1750589408487" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="Aggregation in Microservice">
       <option name="closed" value="true" />
@@ -122,5 +133,23 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Aggregation in Microservice" />
     <option name="LAST_COMMIT_MESSAGE" value="Aggregation in Microservice" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

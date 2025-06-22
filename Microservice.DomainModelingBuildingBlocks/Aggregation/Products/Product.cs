@@ -1,5 +1,5 @@
 
-namespace Microservice.Aggregate.Products;
+namespace Microservice.DomainModelingBuildingBlocks.Aggregation.Products;
 
 public class Product
 {

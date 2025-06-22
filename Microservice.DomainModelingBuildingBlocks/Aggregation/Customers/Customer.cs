@@ -1,5 +1,5 @@
 
-namespace Microservice.Aggregate.Customers;
+namespace Microservice.DomainModelingBuildingBlocks.Aggregation.Customers;
 
 public class Customer
 {

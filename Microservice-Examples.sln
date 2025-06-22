@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice.Aggregate", "Microservice.Aggregate\Microservice.Aggregate.csproj", "{2CC7D035-8D18-46A5-A68B-45F72431EB87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice.DomainModelingBuildingBlocks", "Microservice.DomainModelingBuildingBlocks\Microservice.DomainModelingBuildingBlocks.csproj", "{2CC7D035-8D18-46A5-A68B-45F72431EB87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

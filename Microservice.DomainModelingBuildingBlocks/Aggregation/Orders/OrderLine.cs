@@ -1,5 +1,5 @@
 
-namespace Microservice.Aggregate.Orders;
+namespace Microservice.DomainModelingBuildingBlocks.Aggregation.Orders;
 
 public class OrderLine
 {
