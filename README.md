@@ -226,4 +226,8 @@ that calculate logic and finally return output.
 - Don't have relationship between objects just use object's id
 - You don't access to use objects under aggregate root directly like order/OrderLines
 ##### Factory
-##### Repository 
+
+##### Repository
+
+The approach of repository in Microservice is , you should behave like a repository
+in an Aggregation scope.

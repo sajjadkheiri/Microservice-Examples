@@ -7,18 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5875cd4-ea38-499d-b478-17f04af4d600" name="Changes" comment="Aggregation in Microservice">
-      <change afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Factory/Customer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Factory/CustomerType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Microservice.DomainModelingBuildingBlocks.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice-Examples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice-Examples.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Customers/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Customers/Customer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Microservice.Aggregate.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Orders/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Orders/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Orders/OrderLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Orders/OrderLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Products/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Aggregation/Products/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Microservice.Aggregate/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.DomainModelingBuildingBlocks/Program.cs" afterDir="false" />
+    <list default="true" id="a5875cd4-ea38-499d-b478-17f04af4d600" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +90,7 @@
       <updated>1750501459438</updated>
       <workItem from="1750501460656" duration="59000" />
       <workItem from="1750501539176" duration="4741000" />
-      <workItem from="1750589408487" duration="889000" />
+      <workItem from="1750589408487" duration="1335000" />
     </task>
     <task id="LOCAL-00001" summary="Aggregation in Microservice">
       <option name="closed" value="true" />
@@ -110,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750501872345</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Factory Lifecycle pattern in microservice">
+      <option name="closed" value="true" />
+      <created>1750590436339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750590436339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +130,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Aggregation in Microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggregation in Microservice" />
+    <MESSAGE value="Initial Factory Lifecycle pattern in microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Factory Lifecycle pattern in microservice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
