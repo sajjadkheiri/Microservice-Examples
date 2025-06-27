@@ -231,3 +231,17 @@ that calculate logic and finally return output.
 
 The approach of repository in Microservice is , you should behave like a repository
 in an Aggregation scope.
+
+
+## Value Object
+
+### Advantage of Value Object
+
+- Identity less
+- Attribute-Base
+- Behaviour rich
+- Cohesive
+- Immutable
+- Combinable
+- Self-validating
+- Testable
