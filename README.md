@@ -241,7 +241,21 @@ in an Aggregation scope.
 - Attribute-Base
 - Behaviour rich
 - Cohesive
-- Immutable
+
+- Immutable : When you instantiate an object, you cannot change the value of object
+in the whole life
+
 - Combinable
 - Self-validating
 - Testable
+
+### Common pattern in value object
+
+- Factory method
+- Tiny/Micro type
+- Collection of value object
+
+### Value object in Entity Framework
+
+#### What is Owned Type
+#### What is Value Conversion
