@@ -11,13 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5875cd4-ea38-499d-b478-17f04af4d600" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.EF/Model/Dal/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.EF/Model/Person.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.EF/Model/ValueObjects/FirstName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.EF/Model/ValueObjects/LastName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.Framework/BaseValueObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.Framework/FullName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.Framework/Microservice.ValueObject.Framework.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.Frameworks/BaseValueObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.Frameworks/FullName.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservice.ValueObject.Frameworks/Microservice.ValueObject.Frameworks.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Microservice-Examples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice-Examples.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.ValueObject.Generic/Microservice.ValueObject.Generic.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice.ValueObject.Generic/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice.ValueObject.Framework/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,14 @@
     &quot;accountId&quot;: &quot;9977d565-e958-4aaf-9537-58ebaea68baf&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Microservice.ValueObject.Frameworks/BaseValueObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Microservice.ValueObject.Frameworks/FullName.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -54,21 +65,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.Microservice.ValueObject.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Microservice.ValueObject.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver",
+      "sqlserver.localdb"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.Microservice.ValueObject">
     <configuration name="Microservice.Aggregate" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -152,7 +169,7 @@
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <option name="MIXED_MODE_DEBUG" value="0" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Microservice.ValueObject.Generic/Microservice.ValueObject.Generic.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Microservice.ValueObject.Framework/Microservice.ValueObject.Framework.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -178,7 +195,7 @@
       <workItem from="1751646498017" duration="1634000" />
       <workItem from="1751650218109" duration="2398000" />
       <workItem from="1751656449118" duration="1008000" />
-      <workItem from="1751712513436" duration="2850000" />
+      <workItem from="1751712513436" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="Aggregation in Microservice">
       <option name="closed" value="true" />
@@ -212,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751023980439</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add ValueObject example for storing date in Sql database with EF">
+      <option name="closed" value="true" />
+      <created>1751715795988</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751715795988</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +261,8 @@
     <MESSAGE value="Aggregation in Microservice" />
     <MESSAGE value="Initial Factory Lifecycle pattern in microservice" />
     <MESSAGE value="Initial to concentrate on Value object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial to concentrate on Value object" />
+    <MESSAGE value="Add ValueObject example for storing date in Sql database with EF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ValueObject example for storing date in Sql database with EF" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
