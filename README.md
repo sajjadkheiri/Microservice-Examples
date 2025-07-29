@@ -259,3 +259,18 @@ in the whole life
 
 #### What is Owned Type
 #### What is Value Conversion
+
+## Entity
+
+//TODO : Please come back and learn this concept.
+
+## Domain Event
+
+### Raise, Handler and Dispatch Events
+
+#### Raise Event
+
+
+
+#### Handler Event
+#### Dispatch Event
