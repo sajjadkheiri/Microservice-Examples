@@ -260,6 +260,26 @@ in the whole life
 #### What is Owned Type
 #### What is Value Conversion
 
+
+## Entity
+
+### Advantage of Entity
+
+- Self-validating
+
+## Domain Event
+
+### pub-Sub
+
+
+## Aggregate
+
+## Repository
+
+## Event Source
+
+## CQRS
+
 ## Entity
 
 //TODO : Please come back and learn this concept.
