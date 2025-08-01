@@ -14,4 +14,14 @@ public class Entity : IEquatable<Entity>
     {
         _domainEvents.Add(domainEvent);
     }
+
+    public void ClearEvents()
+    {
+        _domainEvents.Clear();
+    }
+
+    public override bool Equals(object obj)
+    {
+        return Equals(obj as Entity);
+    }
 }

@@ -14,6 +14,7 @@ public class PersonService(DomainEventDbContext dbContext,IDomainEventDispatcher
 
         await _dbContext.People.AddAsync(person);
         
+        // Config Base Dispatch Events by writing framework
         await _domainEventDispatcher.DispatchEventsAsync(person.DomainEvents);
         
         await _dbContext.SaveChangesAsync();
@@ -28,6 +29,7 @@ public class PersonService(DomainEventDbContext dbContext,IDomainEventDispatcher
 
         person.ChangeFirstName(firstName);
 
+        // Config Base Dispatch Events by writing framework
         await _domainEventDispatcher.DispatchEventsAsync(person.DomainEvents);
 
         await _dbContext.SaveChangesAsync();
@@ -42,6 +44,7 @@ public class PersonService(DomainEventDbContext dbContext,IDomainEventDispatcher
 
         person.ChangeLastName(lastName);
 
+        // Config Base Dispatch Events by writing framework
         await _domainEventDispatcher.DispatchEventsAsync(person.DomainEvents);
         
         await _dbContext.SaveChangesAsync();
