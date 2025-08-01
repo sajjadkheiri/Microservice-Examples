@@ -263,25 +263,6 @@ in the whole life
 
 ## Entity
 
-### Advantage of Entity
-
-- Self-validating
-
-## Domain Event
-
-### pub-Sub
-
-
-## Aggregate
-
-## Repository
-
-## Event Source
-
-## CQRS
-
-## Entity
-
 //TODO : Please come back and learn this concept.
 
 ## Domain Event
@@ -299,3 +280,13 @@ in the whole life
 ### Dispatch Events by DbContext
 
 ### Transactional OutBox pattern
+
+## Aggregate
+
+### What is Single Traversal Direction
+
+## Repository
+
+## Event Source
+
+## CQRS

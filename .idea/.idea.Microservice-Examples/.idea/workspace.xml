@@ -15,9 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5875cd4-ea38-499d-b478-17f04af4d600" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DomainEvent.Domain/OutBox/OutBox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DomainEvent.Dal/DomainEventDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DomainEvent.Dal/DomainEventDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Microservice-Examples.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Microservice-Examples.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sajjadkheiri"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sajjadkheiri&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sajjadkheiri/Microservice-Examples.git",
-    "accountId": "9977d565-e958-4aaf-9537-58ebaea68baf"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sajjadkheiri/Microservice-Examples.git&quot;,
+    &quot;accountId&quot;: &quot;9977d565-e958-4aaf-9537-58ebaea68baf&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Microservice.ValueObject.Frameworks/BaseValueObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Microservice.ValueObject.Frameworks/FullName.cs" root0="SKIP_HIGHLIGHTING" />
