@@ -1,4 +1,5 @@
 using DomainEvent.ApplicationService;
+using DomainEvent.ApplicationService.Person;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DomainEvent.Api.Controllers

@@ -1,5 +1,7 @@
 using DomainEvent.ApplicationService;
+using DomainEvent.ApplicationService.Person;
 using DomainEvent.Dal;
+using DomainEvent.Framework;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,7 @@ builder.Services.AddDbContext<DomainEventDbContext>(x =>
     x.UseSqlServer("Server=.;Initial catalog=DomainEventDb;User=sa;Password=S@jj@d0910;TrustServerCertificate=True"));
 
 builder.Services.AddScoped<PersonService>();
+builder.Services.AddTransient<IDomainEventDispatcher, DomainEventDispatcher>();
 
 builder.Services.AddSwaggerGen();
 

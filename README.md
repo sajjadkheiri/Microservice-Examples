@@ -290,7 +290,10 @@ in the whole life
 
 #### Raise Event
 
-
-
 #### Handler Event
+
 #### Dispatch Event
+
+### Dispatch Events by writing framework
+
+### Dispatch Events by DbContext
