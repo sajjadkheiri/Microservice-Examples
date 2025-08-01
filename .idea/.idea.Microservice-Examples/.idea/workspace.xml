@@ -15,9 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5875cd4-ea38-499d-b478-17f04af4d600" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DomainEvent.Domain/OutBox/OutBox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Microservice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DomainEvent.Dal/DomainEventDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DomainEvent.Dal/DomainEventDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DomainEvent.Framework/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DomainEvent.Framework/Entity.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +195,7 @@
       <workItem from="1751650218109" duration="2398000" />
       <workItem from="1751656449118" duration="1008000" />
       <workItem from="1751712513436" duration="4853000" />
-      <workItem from="1754040920921" duration="7042000" />
+      <workItem from="1754040920921" duration="7684000" />
     </task>
     <task id="LOCAL-00001" summary="Aggregation in Microservice">
       <option name="closed" value="true" />
@@ -253,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754051802822</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Dispatch Events by DbContext">
+      <option name="closed" value="true" />
+      <created>1754053356239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754053356240</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +288,8 @@
     <MESSAGE value="Add ValueObject example for storing date in Sql database with EF" />
     <MESSAGE value="Classification" />
     <MESSAGE value="Raise, Handler and Dispatch Events" />
-    <option name="LAST_COMMIT_MESSAGE" value="Raise, Handler and Dispatch Events" />
+    <MESSAGE value="Dispatch Events by DbContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dispatch Events by DbContext" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

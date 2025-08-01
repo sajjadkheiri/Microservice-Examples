@@ -297,3 +297,5 @@ in the whole life
 ### Dispatch Events by writing framework
 
 ### Dispatch Events by DbContext
+
+### Transactional OutBox pattern
